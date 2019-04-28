@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     {% load staticfiles %}
     <meta charset="utf-8">
@@ -10,13 +10,14 @@
 
     <title>{% block title %}{% endblock %}</title>
 
-    <!-- <link href="{% static 'bootstrap/vendor/bootstrap/scss/bootstrap.scss' %}" rel="stylesheet"> 
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'hijack/hijack-styles.css' %}" /> -->
 
+    <link href="{% static 'bootstrap/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'bootstrap/vendor/metisMenu/metisMenu.min.css' %}" rel="stylesheet">
-    <link href="{% static 'bootstrap/css/sb-admin-2.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/dist/css/sb-admin-2.css' %}" rel="stylesheet">
     <link href="{% static 'bootstrap/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
 
-		<link href="{% static 'bootstrap/css/structure.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'manager/css/structure.css' %}" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="{% static 'bootstrap/vendor/jquery/jquery.min.js' %}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
@@ -26,7 +27,7 @@
     <script src="{% static 'bootstrap/vendor/datatables/js/jquery.dataTables.min.js' %}"></script>
     <script src="{% static 'bootstrap/vendor/datatables-plugins/dataTables.bootstrap.min.js' %}"></script>
     <script src="{% static 'bootstrap/vendor/datatables-responsive/dataTables.responsive.js' %}"></script>
-    <script src="{% static 'bootstrap/js/sb-admin-2.js' %}"></script> -->
+    <script src="{% static 'bootstrap/dist/js/sb-admin-2.js' %}"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,6 +46,7 @@
           <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
               <li><a href="/worker_list/"><i class="fa fa-bar-chart" aria-hidden="true"></i>  Worker一覧</a></li>
+              <li><a href="/logout/"><i class="fa fa-bar-chart" aria-hidden="true"></i>  ログアウト</a></li>
             </ul>
           </div>
         </div>
